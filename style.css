@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+body{
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    user-select: none;
+}
+
+.logo{
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.menu nav ul{
+    list-style: none;
+}
+
+.menu nav ul li{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.menu nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu nav ul li a:before{
+    content: '';
+    height: 3px;
+    background-color: white;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.5s ease;
+    width: 90%;
+    left: -15px;
+    opacity: 0;
+}
+
+.menu nav ul li a:hover:before{
+    opacity: 1;
+    left: 4px;
+}
+
+.sidebar nav ul li a:hover{
+    background-color: #444;
+    transform: scaleX(1.05);
+    border-radius: 12px;
+    padding: 5px;
+}
+.main-content{
+    height: 100%;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.home{
+    margin-top: 20px;
+}
+
+.header{
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    text-align: left;
+}
+
+.cards{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card{
+    background-color: whitesmoke;
+    padding: 50px 20px 50px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    flex: 1;
+    border-radius: 12px;
+}
+
+/* Barang Masuk */
+.content{
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.goods-table{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    border-collapse: collapse;
+}
+
+.goods-table th, td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.goods-table thead{
+    background-color: #333;
+    color: white;
+}
+
+.goods-table tbody tr:hover{
+    background-color: rgba(0, 122, 0, 0.639);
+}
+/* End of Barang Masuk */
